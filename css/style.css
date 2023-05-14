@@ -1,15 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=El+Messiri");
 
-:root{
-	--main:#68600e;
+:root {
+  --main: #32a0c2;
 }
 
-*{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
 
 body {
   font-family: "El Messiri", sans-serif;
@@ -37,15 +36,17 @@ main > section {
   justify-content: center;
   align-content: center;
   align-items: center;
-  border-bottom: 3px solid var(--main);
-  padding: 0px 120px;
+  border-bottom: 0.1875rem solid var(--main);
+  padding: 0rem 7.5rem;
 }
 
 #branding h1 {
-  font-size: 28px;
+  font-size: 1.75rem;
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
 }
 nav > ul {
-  margin-top: 0px;
+  margin-top: 0rem;
   list-style-type: none;
 }
 
@@ -56,7 +57,7 @@ nav > ul {
 
 nav > ul > li {
   float: right;
-  margin-left: 15px;
+  margin-left: 0.9375rem;
 }
 li a {
   text-decoration: none;
@@ -69,7 +70,7 @@ li a {
 }
 
 #showcase {
-  min-height: 400px;
+  min-height: 25rem;
   background: url("../img/image.jpg") no-repeat center;
   background-size: cover;
   text-align: center;
@@ -77,17 +78,17 @@ li a {
 }
 
 #showcase h1 {
-  margin-top: 100px;
-  font-size: 55px;
-  margin-bottom: 10px;
+  margin-top: 6.25rem;
+  font-size: 3.4375rem;
+  margin-bottom: 0.625rem;
 }
 
 #showcase p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 #newsletter {
-  padding: 15px 120px;
+  padding: 0.9375rem 7.5rem;
   color: #ffffff;
   background: #353637;
   display: flex;
@@ -103,7 +104,7 @@ li a {
 
 #newsletter form {
   float: left;
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -112,23 +113,23 @@ li a {
 }
 
 #newsletter input[type="email"] {
-  padding: 4px;
-  height: 25px;
-  width: 250px;
+  padding: 0.25rem;
+  height: 2.1875rem;
+  width: 15.625rem;
 }
 
 .button {
-  height: 38px;
+  height: 2.375rem;
   background: #cccccc;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
   color: #353637;
 }
 
 /* boxes & footer */
 #boxes {
-  margin-top: 20px;
-  padding: 60px 120px;
+  margin-top: 1.25rem;
+  padding: 3.75rem 7.5rem;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -138,19 +139,30 @@ li a {
 
 #boxes .box {
   text-align: center;
-  margin-left: 10px;
+  margin-left: 0.625rem;
 }
 
-@media (max-width: 1020px) {
+#boxes h3 {
+  margin-block-start: 0.8em;
+  margin-block-end: 0.8em;
+}
+
+#boxes p{
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+}
+
+@media (max-width: 63.75rem) {
   #boxes {
     flex-direction: column;
   }
 }
 
 #footer {
-  padding: 20px;
-  margin-top: 20px;
+  padding: 2.5625rem;
   color: #ffffff;
   background-color: #32a0c2;
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
